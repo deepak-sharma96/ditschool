@@ -1,0 +1,83 @@
+.product-video{
+    width:100%;
+    padding:0;
+    background:#fff;
+}
+
+.video-wrapper{
+   width: 100%;
+    height: 700px;   /* apne section ke hisaab se */
+    overflow: hidden;
+    /* background: #000; */
+     aspect-ratio: 16 / 9;
+}
+
+.background-video{
+   width: 100%;
+    height: 100%;
+    object-fit: contain;   /* cover ki jagah contain */
+    display: block;
+}
+
+.mute-btn{
+    position:absolute;
+    right:30px;
+    bottom:-378px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(10px);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.mute-btn:hover{
+    background:#1E4ED8;
+    transform:scale(1.08);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .video-wrapper{
+        height:500px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .video-wrapper{
+        height:380px;
+    }
+
+    .mute-btn{
+        width:18px;
+        height:21px;
+        right:1px;
+        bottom:11px;
+        font-size:18px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .video-wrapper{
+        height:260px;
+    }
+
+}

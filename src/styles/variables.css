@@ -1,0 +1,26 @@
+:root{
+
+    --primary:#3B6FFF;
+    --primary-dark:#234399;
+
+    --secondary:#F6F9FF;
+    --section:#F5F5F5;
+    --muted-section:#F2F2F2;
+
+    --text:#1E1E1E;
+    --text-strong:#1A1A1A;
+    --text-soft:rgba(26,26,26,.8);
+
+    --white:#FFFFFF;
+
+    --border:#E8EAF2;
+    --line:#E9E9E9;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --blue-shadow:0 16px 34px rgba(59,111,255,.16);
+
+    --radius:12px;
+    --pill:222px;
+
+    --transition:.3s ease;
+}

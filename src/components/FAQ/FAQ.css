@@ -1,0 +1,137 @@
+.faq-section{
+    width:100%;
+    padding:100px 0;
+    background:#F6F6F6;
+}
+
+.faq-container{
+    width:min(90%,1248px);
+    margin:0 auto;
+}
+
+.faq-heading{
+    margin-bottom:50px;
+}
+
+.faq-heading h2{
+    font-size:24px;
+}
+
+.faq-heading p{
+    max-width:750px;
+    line-height:28px;
+}
+
+.faq-wrapper{
+    max-width:988px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.faq-item{
+    overflow:hidden;
+    border-radius:16px;
+    background:var(--white);
+    transition:box-shadow .35s ease;
+}
+
+.faq-item:hover{
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.faq-question{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:16px 20px;
+    background:transparent;
+    text-align:left;
+}
+
+.faq-question h3{
+    color:#000;
+    font-size:16px;
+    font-weight:600;
+    line-height:1.35;
+}
+
+.faq-icon{
+    width:24px;
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    color:#3b6fff;
+    font-size:26px;
+    font-weight:500;
+    line-height:1;
+    transition:transform .3s ease;
+}
+
+.faq-item.active .faq-icon{
+    transform:rotate(180deg);
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+}
+
+.faq-item.active .faq-answer{
+    max-height:260px;
+}
+
+.faq-answer p{
+    padding:0 20px 20px;
+    color:#666;
+    font-size:15px;
+    line-height:28px;
+}
+
+@media (max-width:992px){
+    .faq-section{
+        padding:80px 0;
+    }
+}
+
+@media (max-width:768px){
+    .faq-heading h2{
+        font-size:22px;
+    }
+
+    .faq-heading p{
+        font-size:15px;
+    }
+
+    .faq-question{
+        padding:16px;
+    }
+
+    .faq-question h3{
+        padding-right:20px;
+        font-size:15px;
+    }
+}
+
+@media (max-width:576px){
+    .faq-section{
+        padding:60px 0;
+    }
+
+    .faq-heading h2{
+        font-size:20px;
+    }
+
+    .faq-heading p,
+    .faq-question h3,
+    .faq-answer p{
+        font-size:14px;
+        line-height:24px;
+    }
+}
