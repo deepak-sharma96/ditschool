@@ -17,35 +17,12 @@
     height: 100%;
     object-fit: contain;   /* cover ki jagah contain */
     display: block;
-}
-
-.mute-btn{
-    position:absolute;
-    right:30px;
-    bottom:-378px;
-
-    width:55px;
-    height:55px;
-
-    border:none;
-    border-radius:50%;
-    background:rgba(0,0,0,.55);
-    backdrop-filter:blur(10px);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    color:#fff;
-    font-size:22px;
     cursor:pointer;
-
-    transition:.3s;
 }
 
-.mute-btn:hover{
-    background:#1E4ED8;
-    transform:scale(1.08);
+.background-video:focus-visible{
+    outline:3px solid #1E4ED8;
+    outline-offset:-3px;
 }
 
 /* Responsive */
@@ -62,14 +39,6 @@
 
     .video-wrapper{
         height:380px;
-    }
-
-    .mute-btn{
-        width:18px;
-        height:21px;
-        right:1px;
-        bottom:11px;
-        font-size:18px;
     }
 
 }
